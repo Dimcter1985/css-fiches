@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #595252;
+	height: 100vh;
+}
+
+.button {
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #3629DC;
+	letter-spacing: 4px;
+	font-size: 24px;
+	overflow: hidden;
+	padding: 15px 30px;
+	transition: 0.2s;
+}
+
+.button__line {
+	position: absolute;
+	display: block;
+}
+
+.button__line--top {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #3629DC);
+}
+
+.button:hover .button__line--top {
+	left: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+
+.button__line--bottom {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, #3629DC);
+}
+
+.button:hover .button__line--bottom {
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+
+.button__line--left {
+	left: 0;
+	bottom: -100%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(0deg, transparent, #3629DC);
+}
+
+.button:hover .button__line--left {
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+
+.button__line--right {
+	right: 0;
+	top: -100%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #3629DC);
+}
+
+.button:hover .button__line--right {
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+
+.button:hover {
+	background-color: #3629DC;
+	box-shadow: 0 0 10px #3629DC, 0 0 40px #3629DC, 0 0 80px #3629DC;
+	transition-delay: 0.7s;
+	color: #595252;
+}

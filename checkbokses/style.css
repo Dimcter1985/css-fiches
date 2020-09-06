@@ -1,0 +1,37 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+.wrapper{
+	height: 100vh;
+	background: #9892B4;
+	padding: 20px;
+	margin: 0;
+}
+label{
+	color: white;
+	padding-left: 10px;
+}
+label, input{
+	cursor: pointer;
+}
+.country{
+	margin: 10px;
+}
+input[type="checkbox"]{
+	display: none;
+}
+label::before{
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	border: 1px solid white;
+	margin-right: 10px;
+}
+input[type="checkbox"]:checked + label::before{
+	content: '';
+	background-size: 100%;
+	background-image: url(cross.png); 
+}
